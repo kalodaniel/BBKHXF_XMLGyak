@@ -1,0 +1,15 @@
+<?xml  verison="1.0" encoding="utf-8"?>
+
+<konferencia cím="Adatkezelés XML-ben" helyszín="Miskolci egyetem" dátum="2021.09.21">
+    <hallgatók>
+        <hallgató>
+            <név>Kaló Dániel</név>
+            <lakcím>Mezőkövesd</lakcím>
+        </hallgató>
+    </hallgatók>
+    <előadó>
+        <név>Bednarik László</név>
+        <adószám>xxxxx-xx</adószám>
+        <lakcím>Miskolc</lakcím>
+    </előadó>
+</konferencia>
