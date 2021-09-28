@@ -1,0 +1,11 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT orarend (ora)+>
+<!ELEMENT ora (targy,idopont,helyszin,oktato,szak)>
+<!ATTLIST ora xmlns CDATA #FIXED '' id CDATA #REQUIRED tipus NMTOKEN #REQUIRED>
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont (#PCDATA)>
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
+

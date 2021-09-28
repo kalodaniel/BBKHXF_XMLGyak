@@ -1,0 +1,9 @@
+<!ELEMENT konyvek (konyv)+>
+<!ELEMENT cim (#PCDATA)>
+<!ELEMENT kiadas (#PCDATA)>
+<!ELEMENT kiado (#PCDATA)>
+<!ELEMENT szerzo (#PCDATA)>
+<!ELEMENT konyv (cim,kiadas,kiado,szerzok)+>
+<!ATTLIST konyv xmlns CDATA #FIXED '' id CDATA #REQUIRED>
+<!ELEMENT szerzok (szerzo)+>
+

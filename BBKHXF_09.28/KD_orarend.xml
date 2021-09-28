@@ -1,0 +1,91 @@
+<?xml
+   version = "1.0"
+   encoding = "UTF-8"
+?>
+<!DOCTYPE konyvek SYSTEM "KD_orarend.dtd">
+<orarend>
+    <ora id="1" tipus="Gyakorlat">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>Hétfő 10-12</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Krizsán Zoltán</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="2" tipus="Elmélet">
+        <targy>Web technológiák</targy>
+        <idopont>Hétfő 12-14</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="3" tipus="Elmélet">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>Hétfő 14-17</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Dudás Laszló</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="4" tipus="Gyakorlat">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>Kedd 10-12</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Krizsán Zoltán</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="5" tipus="Elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>Kedd 12-14</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="6" tipus="Gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>Kedd 14-16</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="7" tipus="Gyakorlat">
+        <targy>Web technológiák</targy>
+        <idopont>Kedd 16-18</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="8" tipus="Gyakorlat">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>Kedd 18-19</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Dudás László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="9" tipus="Elmélet">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>Szerda 8-10</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Tompa Tamás</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="10" tipus="Gyakorlat">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>Szerda 10-12</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Tompa Tamás</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="11" tipus="Elmélet">
+        <targy>Integrál Vállalati Rendszerek</targy>
+        <idopont>Szerda 14-16</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Samad Dadvandipour</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="12" tipus="Gyakorlat">
+        <targy>Integrált Vállalati Rendszerek</targy>
+        <idopont>Szerda 16-18</idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Samad Dadvandipour</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+</orarend>
