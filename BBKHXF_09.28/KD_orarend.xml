@@ -2,7 +2,7 @@
    version = "1.0"
    encoding = "UTF-8"
 ?>
-<!DOCTYPE konyvek SYSTEM "KD_orarend.dtd">
+<!DOCTYPE orarend SYSTEM "KD_orarend.dtd">
 <orarend>
     <ora id="1" tipus="Gyakorlat">
         <targy>Webes Alkalmazások</targy>
