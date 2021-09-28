@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE konyvek SYSTEM "KD_konyv.dtd">
-<konyvek>
-    <konyv id="1">
-        <cim>Android zsebkönyv</cim>
-        <kiadas>2019.10.28</kiadas>
-        <kiado>Libri</kiado>
-        <szerzok>
-            <szerzo>Bártfai Barnabás</szerzo>
-        </szerzok>
-    </konyv>
-    <konyv id="2">
-        <cim>Pragmatic Programmer</cim>
-        <kiadas>2015.03.13</kiadas>
-        <kiado>Libri</kiado>
-        <szerzok>
-            <szerzo>Davis Thomas</szerzo>
-            <szerzo>Andrew Hunt</szerzo>
-        </szerzok>
-    </konyv>
-    <konyv id="3">
-        <cim>Limitless</cim>
-        <kiadas>2016.04.11</kiadas>
-        <kiado>Libri</kiado>
-        <szerzok>
-            <szerzo>Jim Kwik</szerzo>
-        </szerzok>
-    </konyv>
-</konyvek>
+<!DOCTYPE books SYSTEM "KD_konyv.dtd">
+<books>
+    <book id = "a01">
+        <title>Android zsebkönyv</title>
+        <published>2019.10.28</published>
+        <publisher>Libri</publisher>
+        <author>Bártfai Barnabás</author>
+    </book>
+    <book id="a02">
+        <title>Pragmatic Programmer</title>
+        <published>2015.03.13</published>
+        <publisher>Libri</publisher>
+        <author>Davis Thomas</author>
+        <author>Andrew Hunt</author>
+    </book>
+    <book id="a03">
+        <title>Limitless</title>
+        <published>2016.04.11</published>
+        <publisher>Libri</publisher>
+        <author>Jim Kwik</author>
+    </book>
+</books>
