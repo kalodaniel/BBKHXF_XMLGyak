@@ -1,0 +1,22 @@
+<?xml
+   version = "1.0"
+   encoding = "UTF-8"
+?>
+
+<!DOCTYPE mozi SYSTEM "KD_mozi.dtd">
+
+<mozi>
+    <film id="txn_nxm_2jb" mufaj="horror">
+        <rendezo id="nzk_4xm_2jb" nev="alex"/>
+        <rendezo id="nzk_4xm_1jb" nev="alex"/>
+        <szinesz id="u5q_4xm_2jb" nev="Madison Ivy"/>
+        <iro id="trv_4xm_2jb"/>
+    </film>
+
+    <film id="txn_nxm_5jb" mufaj="scifi">
+        <rendezo id="nzk_4xm_6jb" nev="alex"/>
+        <rendezo id="nzk_4xm_0jb" nev="alex"/>
+        <szinesz id="u5q_4xm_7jb" nev="Madison Ivy"/>
+        <iro id="trv_4xm_8jb"/>
+    </film>
+</mozi>

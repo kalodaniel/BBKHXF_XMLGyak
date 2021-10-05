@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<orarend xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="KD_orarend.xsd">
+<orarend xsi:noNamespaceSchemaLocation="KD_orarend.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <ora id="a01" tipus="Gyakorlat">
         <targy>Webes Alkalmazások</targy>
         <idopont>Hétfő 10-12</idopont>
