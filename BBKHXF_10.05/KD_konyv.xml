@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNameSpaceSchemaLocation="KD_konyv.xsd">
+    <book id = "a01">
+        <title>Android zsebkönyv</title>
+        <published>2019.10.28</published>
+        <publisher>&lt;XML&gt; Libri</publisher>
+        <author>Bártfai Barnabás</author>
+    </book>
+    <book id="a02">
+        <title>Pragmatic Programmer</title>
+        <published>2015.03.13</published>
+        <publisher>&lt;XML&gt; Libri</publisher>
+        <author>Davis Thomas</author>
+        <author>Andrew Hunt</author>
+    </book>
+    <book id="a03">
+        <title>Limitless</title>
+        <published>2016.04.11</published>
+        <publisher>&lt;XML&gt; Libri</publisher>
+        <author>Jim Kwik</author>
+    </book>
+</books>
