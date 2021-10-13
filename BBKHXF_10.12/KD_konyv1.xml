@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<konyvek xsi:noNamespaceSchemaLocation="KD_konyv1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <konyv isbn="0462726935">
+        <cim>A Gyűrűk Ura</cim>
+        <szerzo>Tolkien</szerzo>
+        <szereplo>
+            <nev>Legolas</nev>
+            <baratja>Aragorn</baratja>
+            <szuletett>2000-01-03</szuletett>
+            <jellemzes>Akárcsak népe, ő is bizalmatlan a törpökkel szemben, ami csípős megjegyzésekre vezet közte és az erebori törpök követe, Glóin fia Gimli között.</jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev>Aragorn</nev>
+            <baratja>Legolas</baratja>
+            <szuletett>2931-03-01</szuletett>
+            <jellemzes>Még csak kétéves volt, amikor apja kilovagolt az orkok ellen, és elesett egy ork nyíltól.</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
