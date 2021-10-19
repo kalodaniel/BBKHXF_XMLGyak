@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE szemelyek SYSTEM "szemelyekBBKHXF.dtd">
+
+<szemelyek xsi:noNamespaceSchemaLocation="szemelyekBBKHXF.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <szemely id="erf413">
+        <nev>Kaló Dániel</nev>
+        <kor>23</kor>
+        <varos>Miskolc</varos>
+    </szemely>
+    <szemely id="jas828">
+        <nev>Kiss Béla</nev>
+        <kor>22</kor>
+        <varos>Mezőkövesd</varos>
+    </szemely>
+    <szemely id="jaj315">
+        <nev>Nagy András</nev>
+        <kor>21</kor>
+        <varos>Eger</varos>
+    </szemely>
+</szemelyek>
