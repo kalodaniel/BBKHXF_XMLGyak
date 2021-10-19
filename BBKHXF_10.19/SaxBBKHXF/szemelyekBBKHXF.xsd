@@ -4,7 +4,7 @@
     <xs:element name="szemelyek">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="szemely">
+                <xs:element name="szemely" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="nev" type="xs:string"/>
