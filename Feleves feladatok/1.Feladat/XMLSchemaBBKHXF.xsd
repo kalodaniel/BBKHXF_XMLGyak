@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <xs:element name="autocentrum">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="auto" type="autoTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="vasarlas" type="vasarlasTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="megrendelo" type="megrendeloTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="rendeles" type="rendelesTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="beszallito" type="beszallitoTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="kereskedes" type="kereskedesTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="dolgozo" type="dolgozoTipus" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="szamla" type="szamlaTipus" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="autoTipus">
+        <xs:sequence>
+            <xs:element name="ar" type="xs:double"/>
+            <xs:element name="szin" type="xs:string"/>
+            <xs:element name="hajtas" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="extrak" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="motor" type="motorTipus"/>
+        </xs:sequence>
+        <xs:attribute name="autoId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="motorTipus">
+        <xs:sequence>
+            <xs:element name="hengerurtartalom" type="xs:integer"/>
+            <xs:element name="teljesitmeny" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vasarlasTipus">
+        <xs:sequence>
+            <xs:element name="darabszam" type="xs:integer"/>
+            <xs:element name="fizetesimod" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="megrendeloTipus">
+        <xs:sequence>
+            <xs:element name="nev" type="xs:string"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+        <xs:attribute name="megrendeloId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="cimTipus">
+        <xs:sequence>
+            <xs:element name="iranyitoszam" type="xs:integer"/>
+            <xs:element name="telepules" type="xs:string"/>
+            <xs:element name="utca" type="xs:string"/>
+            <xs:element name="hazszam" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rendelesTipus">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="darabszam" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="rendelesId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="beszallitoTipus">
+        <xs:sequence>
+            <xs:element name="elerhetoseg" type="xs:string" maxOccurs="unbounded"/>
+            <xs:element name="markanev" type="xs:string"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+        <xs:attribute name="beszallitoId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="kereskedesTipus">
+        <xs:sequence>
+            <xs:element name="autojellemzok" type="xs:string"/>
+            <xs:element name="tartalmaz" type="xs:boolean"/>
+        </xs:sequence>
+        <xs:attribute name="kereskedesId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="dolgozoTipus">
+        <xs:sequence>
+            <xs:element name="beosztas" type="xs:string" />
+            <xs:element name="fizetes" type="xs:integer"/>
+            <xs:element name="cim" type="cimTipus"/>
+        </xs:sequence>
+        <xs:attribute name="dolgozoId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="szamlaTipus">
+        <xs:sequence>
+            <xs:element name="datum" type="xs:date"/>
+            <xs:element name="osszeg" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="szamlaId" type="xs:integer"/>
+    </xs:complexType>
+</xs:schema>

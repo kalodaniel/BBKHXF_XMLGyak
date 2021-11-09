@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<autocentrum>
+    <auto autoId="1">
+        <ar>12000000</ar>
+        <szin>Fekete</szin>
+        <hajtas>Osszkerek</hajtas>
+        <extrak>Ulesfutes</extrak>
+        <extrak>Savtarto</extrak>
+        <motor>
+            <hengerurtartalom>1300</hengerurtartalom>
+            <teljesitmeny>100</teljesitmeny>
+        </motor>
+    </auto>
+    <auto autoId="2">
+        <ar>16000000</ar>
+        <szin>Feher</szin>
+        <hajtas>Osszkerek</hajtas>
+        <hajtas>Hatsokerek</hajtas>
+        <extrak>Ulesfutes</extrak>
+        <extrak>Savtarto</extrak>
+        <extrak>Kormenyfutes</extrak>
+        <motor>
+            <hengerurtartalom>1600</hengerurtartalom>
+            <teljesitmeny>160</teljesitmeny>
+        </motor>
+    </auto>
+    <vasarlas>
+        <darabszam>1</darabszam>
+        <fizetesimod>Kartyas</fizetesimod>
+    </vasarlas>
+    <vasarlas>
+        <darabszam>1</darabszam>
+        <fizetesimod>Keszpenz</fizetesimod>
+    </vasarlas>
+    <megrendelo megrendeloId="1">
+        <nev>Kiss Ákos</nev>
+        <cim>
+            <iranyitoszam>3400</iranyitoszam>
+            <telepules>Mezokovesd</telepules>
+            <utca>Szomolyai</utca>
+            <hazszam>12</hazszam>
+        </cim>
+    </megrendelo>
+    <rendeles rendelesId="1">
+        <datum>2021-02-04</datum>
+        <darabszam>5</darabszam>
+    </rendeles>
+    <beszallito beszallitoId="1">
+        <elerhetoseg>0620/113-5264</elerhetoseg>
+        <elerhetoseg>beszallito@gmail.com</elerhetoseg>
+        <markanev>Ferrari</markanev>
+        <cim>
+            <iranyitoszam>3500</iranyitoszam>
+            <telepules>Miskolc</telepules>
+            <utca>Tapolcai</utca>
+            <hazszam>45</hazszam>
+        </cim>
+    </beszallito>
+    <kereskedes kereskedesId="1">
+        <autojellemzok>Kombi</autojellemzok>
+        <tartalmaz>1</tartalmaz>
+    </kereskedes>
+    <dolgozo dolgozoId="1">
+        <beosztas>Uzletvezeto</beosztas>
+        <fizetes>400000</fizetes>
+        <cim>
+            <iranyitoszam>3400</iranyitoszam>
+            <telepules>Mezokovesd</telepules>
+            <utca>Hovirag</utca>
+            <hazszam>11</hazszam>
+        </cim>
+    </dolgozo>
+    <szamla szamlaId="1">
+        <datum>2020-12-03</datum>
+        <osszeg>13000000</osszeg>
+    </szamla>
+</autocentrum>
