@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<class xsi:noNamespaceSchemaLocation="studentBBKHXF.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <student id="01">
+        <firstname>Kalo</firstname>
+        <lastname>Daniel</lastname>
+        <nickname>Dani</nickname>
+        <age>23</age>
+    </student>
+    <student id="02">
+        <firstname>Kiss</firstname>
+        <lastname>Bela</lastname>
+        <nickname>Beci</nickname>
+        <age>20</age>
+    </student>
+    <student id="01">
+        <firstname>Arato</firstname>
+        <lastname>Andras</lastname>
+        <nickname>Bandi</nickname>
+        <age>40</age>
+    </student>
+</class>
