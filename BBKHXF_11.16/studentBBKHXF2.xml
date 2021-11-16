@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentBBKHXF2.xsl"?>
+
+<class>
+    <student id="01">
+        <firstname>Kalo</firstname>
+        <lastname>Daniel</lastname>
+        <nickname>Dani</nickname>
+        <age>23</age>
+        <salary>250000</salary>
+    </student>
+    <student id="02">
+        <firstname>Kiss</firstname>
+        <lastname>Bela</lastname>
+        <nickname>Beci</nickname>
+        <age>20</age>
+        <salary>270000</salary>
+    </student>
+    <student id="03">
+        <firstname>Arato</firstname>
+        <lastname>Andras</lastname>
+        <nickname>Bandi</nickname>
+        <age>40</age>
+        <salary>300000</salary>
+    </student>
+</class>

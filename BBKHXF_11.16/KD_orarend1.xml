@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "orarendBBKHXF.xsl"?>
+
+<orarend>
+    <ora id="a01" tipus="Gyakorlat">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>
+            <nap>hétfo</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Krizsán Zoltán</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a02" tipus="Elmélet">
+        <targy>Web technológiák</targy>
+        <idopont>
+            <nap>hétfo</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a03" tipus="Elmélet">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>hétfo</nap>
+            <tol>14</tol>
+            <ig>17</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Dudás Laszló</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a04" tipus="Gyakorlat">
+        <targy>Webes Alkalmazások</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Krizsán Zoltán</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a05" tipus="Elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a06" tipus="Gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Bednarik László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a07" tipus="Gyakorlat">
+        <targy>Web technológiák</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Agárdi Anita</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a08" tipus="Gyakorlat">
+        <targy>Mesterséges Intelligencia</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>18</tol>
+            <ig>19</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Dudás László</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a09" tipus="Elmélet">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>8</tol>
+            <ig>10</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Tompa Tamás</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a10" tipus="Gyakorlat">
+        <targy>Szoftvertesztelés</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Tompa Tamás</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a11" tipus="Elmélet">
+        <targy>Integrált Vállalati Rendszerek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Samad Dadvandipour</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+    <ora id="a12" tipus="Gyakorlat">
+        <targy>Integrált Vállalati Rendszerek</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>Miskolci Egyetem</helyszin>
+        <oktato>Samad Dadvandipour</oktato>
+        <szak>Mérnök informatikus</szak>
+    </ora>
+</orarend>

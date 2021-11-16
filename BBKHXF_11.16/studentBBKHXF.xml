@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentBBKHXF.xsl"?>
+
+<class>
+    <student id="01">
+        <firstname>Kalo</firstname>
+        <lastname>Daniel</lastname>
+        <nickname>Dani</nickname>
+        <age>23</age>
+    </student>
+    <student id="02">
+        <firstname>Kiss</firstname>
+        <lastname>Bela</lastname>
+        <nickname>Beci</nickname>
+        <age>20</age>
+    </student>
+    <student id="03">
+        <firstname>Arato</firstname>
+        <lastname>Andras</lastname>
+        <nickname>Bandi</nickname>
+        <age>40</age>
+    </student>
+</class>
