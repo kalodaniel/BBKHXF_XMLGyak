@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type = "text/xsl" href = "studentBBKHXF_choose.xsl"?>
+
+<class>
+    <student id="01">
+        <firstname>Kalo</firstname>
+        <lastname>Daniel</lastname>
+        <nickname>Dani</nickname>
+        <salary>100000</salary>
+        <degree>High</degree>
+    </student>
+    <student id="02">
+        <firstname>Kiss</firstname>
+        <lastname>Bela</lastname>
+        <nickname>Beci</nickname>
+        <salary>270000</salary>
+        <degree>High</degree>
+    </student>
+    <student id="03">
+        <firstname>Arato</firstname>
+        <lastname>Andras</lastname>
+        <nickname>Bandi</nickname>
+        <salary>500000</salary>
+        <degree>Medium</degree>
+    </student>
+</class>
