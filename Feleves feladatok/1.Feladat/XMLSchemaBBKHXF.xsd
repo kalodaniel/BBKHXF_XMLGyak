@@ -1,30 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
-    <xs:element name="autocentrum">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:element name="auto" type="autoTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="vasarlas" type="vasarlasTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="megrendelo" type="megrendeloTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="rendeles" type="rendelesTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="beszallito" type="beszallitoTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="kereskedes" type="kereskedesTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="dolgozo" type="dolgozoTipus" minOccurs="0" maxOccurs="unbounded"/>
-                <xs:element name="szamla" type="szamlaTipus" minOccurs="0" maxOccurs="unbounded"/>
-            </xs:sequence>
-        </xs:complexType>
+    <xs:element name="autocentrum" type="autocentrumTipus">
+        <xs:key name = "autoPK">
+            <xs:selector xpath="auto"/>
+            <xs:field xpath="autoId"/>
+        </xs:key>
+        <xs:key name = "megrendeloPK">
+            <xs:selector xpath="megrendelo"/>
+            <xs:field xpath="megrendeloId"/>
+        </xs:key>
+        <xs:key name = "rendelesPK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="rendelesId"/>
+        </xs:key>
+        <xs:key name = "beszallitoPK">
+            <xs:selector xpath="beszallito"/>
+            <xs:field xpath="beszallitoId"/>
+        </xs:key>
+        <xs:key name = "kereskedesPK">
+            <xs:selector xpath="kereskedes"/>
+            <xs:field xpath="kereskedesId"/>
+        </xs:key>
+        <xs:key name = "dolgozoPK">
+            <xs:selector xpath="dolgozo"/>
+            <xs:field xpath="dolgozoId"/>
+        </xs:key>
+        <xs:key name = "szamlaPK">
+            <xs:selector xpath="szamla"/>
+            <xs:field xpath="szamlaId"/>
+        </xs:key>
+        <xs:keyref refer="autoPK" name = "vasarlasAutoFK">
+            <xs:selector xpath="vasarlas"/>
+            <xs:field xpath="autoFk"/>
+        </xs:keyref>
+        <xs:keyref refer="megrendeloPK" name = "vasarlasMegrendeloFK">
+            <xs:selector xpath="vasarlas"/>
+            <xs:field xpath="megrendeloFk"/>
+        </xs:keyref>
+        <xs:keyref refer="autoPK" name = "rendelesAutoFK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="autoFk"/>
+        </xs:keyref>
+        <xs:keyref refer="beszallitoPK" name = "rendelesBeszallitoFK">
+            <xs:selector xpath="rendeles"/>
+            <xs:field xpath="beszallitoFk"/>
+        </xs:keyref>
+        <xs:keyref refer="kereskedesPK" name = "foglalkoztatasKereskedesFK">
+            <xs:selector xpath="foglalkoztatas"/>
+            <xs:field xpath="kereskedesFk"/>
+        </xs:keyref>
+        <xs:keyref refer="dolgozoPK" name = "foglalkoztatasDolgozoFK">
+            <xs:selector xpath="foglalkoztatas"/>
+            <xs:field xpath="dolgozoFk"/>
+        </xs:keyref>
     </xs:element>
+
+    <xs:complexType name="autocentrumTipus">
+        <xs:sequence>
+            <xs:element name="auto" type="autoTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="vasarlas" type="vasarlasTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="megrendelo" type="megrendeloTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="rendeles" type="rendelesTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="beszallito" type="beszallitoTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="kereskedes" type="kereskedesTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="foglalkoztatas" type="foglalkoztatasTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="dolgozo" type="dolgozoTipus" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="szamla" type="szamlaTipus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
 
     <xs:complexType name="autoTipus">
         <xs:sequence>
+            <xs:element name="autoId" type="xs:integer"/>
             <xs:element name="ar" type="xs:double"/>
             <xs:element name="szin" type="xs:string"/>
             <xs:element name="hajtas" type="xs:string" maxOccurs="unbounded"/>
             <xs:element name="extrak" type="xs:string" maxOccurs="unbounded"/>
             <xs:element name="motor" type="motorTipus"/>
         </xs:sequence>
-        <xs:attribute name="autoId" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="motorTipus">
@@ -36,17 +90,19 @@
 
     <xs:complexType name="vasarlasTipus">
         <xs:sequence>
+            <xs:element name="autoFk" type="xs:integer"/>
             <xs:element name="darabszam" type="xs:integer"/>
             <xs:element name="fizetesimod" type="xs:string"/>
+            <xs:element name="megrendeloFK" type="xs:integer"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="megrendeloTipus">
         <xs:sequence>
+            <xs:element name="megrendeloId" type="xs:integer"/>
             <xs:element name="nev" type="xs:string"/>
             <xs:element name="cim" type="cimTipus"/>
         </xs:sequence>
-        <xs:attribute name="megrendeloId" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="cimTipus">
@@ -60,43 +116,52 @@
 
     <xs:complexType name="rendelesTipus">
         <xs:sequence>
+            <xs:element name="rendelesId" type="xs:integer"/>
             <xs:element name="datum" type="xs:date"/>
             <xs:element name="darabszam" type="xs:integer"/>
+            <xs:element name="autoFk" type="xs:integer"/>
+            <xs:element name="beszallitoFk" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="rendelesId" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="beszallitoTipus">
         <xs:sequence>
+            <xs:element name="beszallitoId" type="xs:integer"/>
             <xs:element name="elerhetoseg" type="xs:string" maxOccurs="unbounded"/>
             <xs:element name="markanev" type="xs:string"/>
             <xs:element name="cim" type="cimTipus"/>
         </xs:sequence>
-        <xs:attribute name="beszallitoId" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="kereskedesTipus">
         <xs:sequence>
+            <xs:element name="kereskedesId" type="xs:integer"/>
             <xs:element name="autojellemzok" type="xs:string"/>
             <xs:element name="tartalmaz" type="xs:boolean"/>
         </xs:sequence>
-        <xs:attribute name="kereskedesId" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="foglalkoztatasTipus">
+        <xs:sequence>
+            <xs:element name="kereskedesFk" type="xs:integer"/>
+            <xs:element name="dolgozoFk" type="xs:integer"/>
+        </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="dolgozoTipus">
         <xs:sequence>
+            <xs:element name="dolgozoId" type="xs:integer"/>
             <xs:element name="beosztas" type="xs:string" />
             <xs:element name="fizetes" type="xs:integer"/>
             <xs:element name="cim" type="cimTipus"/>
         </xs:sequence>
-        <xs:attribute name="dolgozoId" type="xs:integer"/>
     </xs:complexType>
 
     <xs:complexType name="szamlaTipus">
         <xs:sequence>
+            <xs:element name="szamlaId" type="xs:integer"/>
             <xs:element name="datum" type="xs:date"/>
             <xs:element name="osszeg" type="xs:integer"/>
         </xs:sequence>
-        <xs:attribute name="szamlaId" type="xs:integer"/>
     </xs:complexType>
 </xs:schema>

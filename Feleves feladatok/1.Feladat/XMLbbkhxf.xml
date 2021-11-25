@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <autocentrum xsi:noNamespaceSchemaLocation="XMLSchemaBBKHXF.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <auto autoId="1">
+    <auto>
+        <autoId>1</autoId>
         <ar>12000000</ar>
         <szin>Fekete</szin>
         <hajtas>Osszkerek</hajtas>
@@ -12,7 +13,8 @@
             <teljesitmeny>100</teljesitmeny>
         </motor>
     </auto>
-    <auto autoId="2">
+    <auto>
+        <autoId>2</autoId>
         <ar>16000000</ar>
         <szin>Feher</szin>
         <hajtas>Osszkerek</hajtas>
@@ -26,14 +28,19 @@
         </motor>
     </auto>
     <vasarlas>
+        <autoFk>1</autoFk>
         <darabszam>1</darabszam>
         <fizetesimod>Kartyas</fizetesimod>
+        <megrendeloFK>1</megrendeloFK>
     </vasarlas>
     <vasarlas>
+        <autoFk>1</autoFk>
         <darabszam>1</darabszam>
         <fizetesimod>Keszpenz</fizetesimod>
+        <megrendeloFK>1</megrendeloFK>
     </vasarlas>
-    <megrendelo megrendeloId="1">
+    <megrendelo>
+        <megrendeloId>1</megrendeloId>
         <nev>Kiss Ákos</nev>
         <cim>
             <iranyitoszam>3400</iranyitoszam>
@@ -42,11 +49,15 @@
             <hazszam>12</hazszam>
         </cim>
     </megrendelo>
-    <rendeles rendelesId="1">
+    <rendeles>
+        <rendelesId>1</rendelesId>
         <datum>2021-02-04</datum>
         <darabszam>5</darabszam>
+        <autoFk>1</autoFk>
+        <beszallitoFk>1</beszallitoFk>
     </rendeles>
-    <beszallito beszallitoId="1">
+    <beszallito>
+        <beszallitoId>1</beszallitoId>
         <elerhetoseg>0620/113-5264</elerhetoseg>
         <elerhetoseg>beszallito@gmail.com</elerhetoseg>
         <markanev>Ferrari</markanev>
@@ -57,11 +68,17 @@
             <hazszam>45</hazszam>
         </cim>
     </beszallito>
-    <kereskedes kereskedesId="1">
+    <kereskedes>
+        <kereskedesId>1</kereskedesId>
         <autojellemzok>Kombi</autojellemzok>
         <tartalmaz>1</tartalmaz>
     </kereskedes>
-    <dolgozo dolgozoId="1">
+    <foglalkoztatas>
+        <kereskedesFk>1</kereskedesFk>
+        <dolgozoFk>1</dolgozoFk>
+    </foglalkoztatas>
+    <dolgozo>
+        <dolgozoId>1</dolgozoId>
         <beosztas>Uzletvezeto</beosztas>
         <fizetes>400000</fizetes>
         <cim>
@@ -71,7 +88,8 @@
             <hazszam>11</hazszam>
         </cim>
     </dolgozo>
-    <szamla szamlaId="1">
+    <szamla>
+        <szamlaId>1</szamlaId>
         <datum>2020-12-03</datum>
         <osszeg>13000000</osszeg>
     </szamla>
